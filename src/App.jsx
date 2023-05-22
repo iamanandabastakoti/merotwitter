@@ -18,7 +18,7 @@ function App() {
         <div className="mainContents">
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<Home />} />
+            <Route index element={<Home />} />
             <Route path='/notifications' element={<Notifications />} />
           </Routes>
         </BrowserRouter>
