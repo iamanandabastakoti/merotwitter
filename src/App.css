@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400&display=swap');
+
+:root{
+  --text-font: 'Poppins', sans-serif;
+}
+
+* {
+  font-family: var(--text-font);
+  height: 100%;
+  margin: 0px;
+}
+
+.app {
+  display: flex;
+}
+
+/* Sidebar CSS */
+.sidebar {
+  /* outline-color: red;
+  outline-style: dashed; */
+  padding: 0 15px;
+  border: 1px solid #ccc;
+  height: 100%;
+  display: flex;
+  align-content: space-between;
+  flex: 2.5;
+}
+
+.sidebarLeft {
+  flex: 1;
+}
+
+.sidebarRight {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+/* .appIcon{
+  outline-color: red;
+  outline-style: dashed;
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 25px;
+} */
+.options {
+  /* outline-color: red;
+  outline-style: dashed; */
+  padding: 10px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.optionList {
+  cursor: pointer;
+  font-size: 25px;
+  padding: 10px;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 25px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.optionList:hover{
+  padding-left: 10px;
+  padding-right: 25px;
+  width: fit-content;
+  border-radius: 29px;
+  background-color: #ccc;
+}
+.optionList-button{
+  font-size: 25px;
+  padding: 10px;
+  width: 80%;
+  padding-left: 10px;
+  padding-right: 25px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.tweet-button{
+  cursor: pointer;
+  padding: 9px;
+  font-size: 20px;
+  width: 100%;
+  background-color: #1d9bf0;
+  border: none;
+  color: #fff;
+  border-radius: 29px;
+}
+.tweet-button:hover{
+  background-color: #1d7fc0;
+}
+.appIcon{
+  font-size: 30px;
+  border-radius: 50%;
+  padding: 4px 10px;
+}
+.appIcon:hover{
+  width: fit-content;
+  border-radius: 50%;
+  padding: 4px 10px;
+}
+.optionName{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* MainContents CSS */
+.mainContents{
+  flex: 4;
+  border: 1px solid #ccc;
+}
+
+/* Trends CSS */
+.trends{
+  flex: 3;
+}
