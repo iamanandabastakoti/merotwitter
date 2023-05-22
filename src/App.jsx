@@ -16,10 +16,12 @@ function App() {
       <div className="app">
         <Sidebar />
         <div className="mainContents">
+        <BrowserRouter>
           <Routes>
             <Route index element={<Home />} />
             <Route path='/notifications' element={<Notifications />} />
           </Routes>
+        </BrowserRouter>
         </div>
         <Trends />
       </div>
