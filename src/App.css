@@ -9,9 +9,23 @@
   height: 100%;
   margin: 0px;
 }
+body::-webkit-scrollbar{
+  display: none;
+}
 
 .app {
   display: flex;
+}
+
+/* MainContents CSS */
+.mainContents{
+  flex: 4;
+  border: 1px solid #ccc;
+}
+
+/* Trends CSS */
+.trends{
+  flex: 3;
 }
 
 /* Sidebar CSS */
@@ -115,13 +129,68 @@
   align-items: center;
 }
 
-/* MainContents CSS */
-.mainContents{
-  flex: 4;
+
+/* Home CSS */
+.home{
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+/* HomeTitle CSS */
+.homeTitle{
+  padding: 10px;
   border: 1px solid #ccc;
 }
 
-/* Trends CSS */
-.trends{
-  flex: 3;
+/* UserTweet CSS */
+.user-tweet{
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.tweetArea{
+  display: flex;
+}
+.userPic img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.tweet-text{
+  width: 100%;
+  padding: 0 10px;
+}
+textarea {
+  width: -webkit-fill-available;
+  height: 100px;
+  overflow-y: scroll;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+}
+textarea::-webkit-scrollbar{
+  display: none;
+}
+.home-tweet-button{
+  padding-bottom: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.tweetButton{
+  border-radius: 25px;
+  color: #fff;
+  background-color: #1d9bf0;
+  border: none;
+  cursor: pointer;
+  padding: 9px;
+  font-size: 15px;
+  width: 20%;
+}
+.tweetButton:hover{
+  background-color: #1d7fc0;
 }
