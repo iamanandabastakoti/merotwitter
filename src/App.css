@@ -19,10 +19,13 @@ body::-webkit-scrollbar{
 
 /* MainContents CSS */
 .mainContents{
+  overflow-y: scroll;
   flex: 4;
-  border: 1px solid #ccc;
+  border-top: 1px solid #ccc;
 }
-
+.mainContents::-webkit-scrollbar{
+  display: none;
+}
 /* Trends CSS */
 .trends{
   flex: 3;
@@ -32,6 +35,7 @@ body::-webkit-scrollbar{
 .sidebar {
   /* outline-color: red;
   outline-style: dashed; */
+  overflow-y: hidden;
   padding: 0 15px;
   border: 1px solid #ccc;
   height: 100%;
@@ -199,4 +203,17 @@ textarea:focus{
 }
 .tweetButton:hover{
   background-color: #1d7fc0;
+}
+
+/* Tweets CSS */
+.tweet{
+  border: 1px solid #ccc;
+  height: fit-content;
+  display: flex;
+}
+.profile-pic{
+  padding: 4px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
