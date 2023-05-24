@@ -6,7 +6,8 @@ import axios from 'axios'
 
 const Home = () => {
 
-  const [users, setUsers] =useState([]);
+  const [users, setUsers] = useState([]);
+  const [shouldRefresh, setShouldRefresh] = useState(false);
   const fetchTweets = async () => {
     const posts = await axios.get("https://react-workshop-todo.fly.dev/posts/all?limit=100",{
       headers: {
@@ -18,12 +19,12 @@ const Home = () => {
 
   useEffect(()=>{
     fetchTweets();
-  }, []);
+  }, [shouldRefresh]);
 
   return (
     <div className="home">
       <HomeTitle />
-      <UserTweet />
+      <UserTweet setShouldRefresh={setShouldRefresh} />
       {users.map(({user, content, image, _id}) => {
         return <Tweet avatar={'https://avatars.githubusercontent.com/u/' + user.githubId + '?v=4'} name={user.fullname} username={'@' + user.name} tweet={content} image={image} key={user.id} id={_id} />
       })}

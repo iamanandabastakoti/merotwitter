@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 
-const UserTweet = () => {
+const UserTweet = ({ setShouldRefresh }) => {
     let [tweetContent, setTweetContent] = useState("");
 
     const upload = async () => {
@@ -13,7 +13,9 @@ const UserTweet = () => {
                 headers: {
                     apiKey: `${import.meta.env.VITE_API_KEY}`
                 }
-            })
+            });
+            setTweetContent("");
+            setShouldRefresh((v) => !v);
         } catch{
             alert("Error Uploading Tweet!");
         }
