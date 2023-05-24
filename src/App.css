@@ -214,6 +214,9 @@ textarea:focus{
   padding: 8px;
   gap: 5px;
 }
+.tweet:hover{
+  background-color: #f3f1f1;
+}
 .profile-pic{
   padding: 4px;
   width: 50px;
@@ -275,11 +278,15 @@ textarea:focus{
 /* Footer CSS */
 .footer{
   width: 80%;
+  padding: 3px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 20px;
+  font-size: 18px;
 }
 .footer-icons{
   display: flex;
+}
+.footer-icons:hover{
+  color: #8e99a1;
 }

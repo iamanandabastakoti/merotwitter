@@ -1,8 +1,12 @@
-import React from 'react'
-import {FaRegComment, FaRetweet, FaRegHeart, FaRegChartBar} from 'react-icons/fa'
+import React, { useState } from 'react'
+import {FaRegComment, FaRetweet, FaRegHeart, FaHeart, FaRegChartBar} from 'react-icons/fa'
 import {BsUpload} from 'react-icons/bs'
 
 const Footer = () => {
+  const [isLiked, setIsLiked] = useState(false);
+  const reactTweet = () =>{
+    setIsLiked((v) => !isLiked);
+  }
   return (
     <div className="footer">
       <div className="footer-icons">
@@ -11,8 +15,8 @@ const Footer = () => {
       <div className="footer-icons">
         <FaRetweet />
       </div>
-      <div className="footer-icons">
-        <FaRegHeart />
+      <div onClick={reactTweet} className="footer-icons">
+        {isLiked ? <FaHeart /> : <FaRegHeart /> } 
       </div>
       <div className="footer-icons">
         <FaRegChartBar />
