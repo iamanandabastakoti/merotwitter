@@ -5,7 +5,7 @@ const UserTweet = () => {
         <div className="user-tweet">
             <div className="tweetArea">
                 <div className="userPic">
-                    <img src="https://pbs.twimg.com/profile_images/1621753053748789248/0rSidPnE_400x400.jpg" alt="User Profile Picture" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Shah_Rukh_Khan_graces_the_launch_of_the_new_Santro.jpg" alt="User Profile Picture" />
                 </div>
                 <div className="write-tweet-text">
                 <textarea className='tweet-textarea' id="tweet" name="tweet" placeholder="What is happening?!" ></textarea>
