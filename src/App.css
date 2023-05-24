@@ -115,7 +115,7 @@ body::-webkit-scrollbar{
   border-radius: 29px;
 }
 .tweet-button:hover{
-  background-color: #1d7fc0;
+  background-color: #0c8de4;
 }
 .appIcon{
   font-size: 30px;
@@ -164,7 +164,7 @@ body::-webkit-scrollbar{
   height: 50px;
   border-radius: 50%;
 }
-.tweet-text{
+.write-tweet-text{
   width: 100%;
   padding: 0 10px;
 }
@@ -202,7 +202,7 @@ textarea:focus{
   width: 20%;
 }
 .tweetButton:hover{
-  background-color: #1d7fc0;
+  background-color: #0c8de4;
 }
 
 /* Tweets CSS */
@@ -210,10 +210,40 @@ textarea:focus{
   border: 1px solid #ccc;
   height: fit-content;
   display: flex;
+  padding: 8px;
+  gap: 5px;
 }
 .profile-pic{
   padding: 4px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+/* Tweet Header CSS */
+.tweet-header{
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  gap: 5px;
+}
+.user-name{
+  font-size: 16px;
+}
+.user-handle{
+  font-size: 14px;
+  color: #8e99a1;
+}
+
+/* Tweet Body CSS */
+.tweet-body{
+  padding-right: 15px;
+}
+.tweet-text{
+  margin-bottom: 10px;
+}
+.tweet-image{
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 18px;
 }
