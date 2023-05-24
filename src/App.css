@@ -266,3 +266,16 @@ textarea:focus{
   border: 1px solid #ccc;
   border-radius: 18px;
 }
+
+/* Footer CSS */
+.footer{
+  outline-color: red;
+  outline-style: dashed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+.footer-icons{
+  display: flex;
+}
