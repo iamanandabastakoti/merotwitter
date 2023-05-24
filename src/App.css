@@ -221,6 +221,11 @@ textarea:focus{
   border-radius: 50%;
 }
 
+/* Tweet Content CSS */
+.tweet-content{
+  width: 100%;
+}
+
 /* Tweet Header CSS */
 .tweet-header{
   display: flex;
@@ -269,8 +274,7 @@ textarea:focus{
 
 /* Footer CSS */
 .footer{
-  outline-color: red;
-  outline-style: dashed;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
