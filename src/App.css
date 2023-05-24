@@ -223,8 +223,12 @@ textarea:focus{
 /* Tweet Header CSS */
 .tweet-header{
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: fit-content;
+}
+.header-user-info{
+  display: flex;
   gap: 5px;
 }
 .user-name{
@@ -234,7 +238,18 @@ textarea:focus{
   font-size: 14px;
   color: #8e99a1;
 }
-
+.header-more{
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-more:hover{
+  cursor: pointer;
+  color: grey;
+  border: 1px solid black;
+  border-radius: 50%;
+}
 /* Tweet Body CSS */
 .tweet-body{
   padding-right: 15px;
