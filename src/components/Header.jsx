@@ -1,12 +1,12 @@
 import React from 'react'
 import { FiMoreHorizontal } from 'react-icons/fi'
 
-const Header = () => {
+const Header = ({ name, username }) => {
   return (
     <div className="tweet-header">
       <div className="header-user-info">
-      <h3 className="user-name">Ananda Bastakoti</h3>
-      <span className="user-handle">@iamanandabastaktoi</span>
+      <h3 className="user-name">{name}</h3>
+      <span className="user-handle">{username}</span>
       </div>
       <div className="header-more">
         <FiMoreHorizontal />
