@@ -91,7 +91,7 @@ body::-webkit-scrollbar{
   padding-right: 25px;
   width: fit-content;
   border-radius: 29px;
-  background-color: #ccc;
+  background-color: #f3f1f1;
 }
 .optionList-button{
   font-size: 25px;
