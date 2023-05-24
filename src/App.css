@@ -170,7 +170,7 @@ body::-webkit-scrollbar{
 }
 textarea {
   width: -webkit-fill-available;
-  height: 100px;
+  height: 90px;
   overflow-y: scroll;
   resize: none;
   border: none;
@@ -194,7 +194,7 @@ textarea:focus{
 .tweetButton{
   border-radius: 25px;
   color: #fff;
-  background-color: #1d9bf0;
+  background-color: #8ecdf7;
   border: none;
   cursor: pointer;
   padding: 9px;
@@ -202,11 +202,12 @@ textarea:focus{
   width: 20%;
 }
 .tweetButton:hover{
-  background-color: #0c8de4;
+  background-color: #7cb4da;
 }
 
 /* Tweets CSS */
 .tweet{
+  cursor: pointer;
   border: 1px solid #ccc;
   height: fit-content;
   display: flex;
@@ -234,6 +235,9 @@ textarea:focus{
 .user-name{
   font-size: 16px;
 }
+.user-name:hover{
+  text-decoration: underline;
+}
 .user-handle{
   font-size: 14px;
   color: #8e99a1;
@@ -246,9 +250,9 @@ textarea:focus{
 }
 .header-more:hover{
   cursor: pointer;
-  color: grey;
-  border: 1px solid black;
+  border: 1px solid #ccc;
   border-radius: 50%;
+  background-color: #8ecdf7;
 }
 /* Tweet Body CSS */
 .tweet-body{
