@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400&display=swap');
 
-:root{
+:root {
   --text-font: 'Poppins', sans-serif;
 }
 
@@ -9,7 +9,8 @@
   height: 100%;
   margin: 0px;
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
   display: none;
 }
 
@@ -18,16 +19,18 @@ body::-webkit-scrollbar{
 }
 
 /* MainContents CSS */
-.mainContents{
+.mainContents {
   overflow-y: scroll;
   flex: 4;
   border-top: 1px solid #ccc;
 }
-.mainContents::-webkit-scrollbar{
+
+.mainContents::-webkit-scrollbar {
   display: none;
 }
+
 /* Trends CSS */
-.trends{
+.trends {
   flex: 3;
 }
 
@@ -55,15 +58,14 @@ body::-webkit-scrollbar{
   align-content: space-between;
 }
 
-/* .appIcon{
-  outline-color: red;
-  outline-style: dashed;
+.appIcon {
   flex: 2;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   font-size: 25px;
-} */
+}
+
 .options {
   /* outline-color: red;
   outline-style: dashed; */
@@ -86,14 +88,16 @@ body::-webkit-scrollbar{
   align-items: center;
   gap: .5rem;
 }
-.optionList:hover{
+
+.optionList:hover {
   padding-left: 10px;
   padding-right: 25px;
   width: fit-content;
   border-radius: 29px;
   background-color: #f3f1f1;
 }
-.optionList-button{
+
+.optionList-button {
   font-size: 25px;
   padding: 10px;
   width: 80%;
@@ -104,7 +108,8 @@ body::-webkit-scrollbar{
   align-items: center;
   gap: .5rem;
 }
-.tweet-button{
+
+.tweet-button {
   cursor: pointer;
   padding: 9px;
   font-size: 20px;
@@ -114,60 +119,102 @@ body::-webkit-scrollbar{
   color: #fff;
   border-radius: 29px;
 }
-.tweet-button:hover{
+
+.tweet-button:hover {
   background-color: #0c8de4;
 }
-.appIcon{
+
+.appIcon {
   font-size: 30px;
   border-radius: 50%;
   padding: 4px 10px;
 }
-.appIcon:hover{
+
+.appIcon:hover {
   width: fit-content;
   border-radius: 50%;
   padding: 4px 10px;
 }
-.optionName{
+
+.optionName {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
+/* Sidebar User Profile */
+.sidebar-user-profile {
+  display: flex;
+  width: fit-content;
+  gap: 3px;
+  padding-left: 4px;
+  padding-right: 12px;
+}
+
+.sidebar-profile-pic {
+  padding: 4px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.sidebar-usser-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidebar-user-name {
+  display: flex;
+  align-items: flex-end;
+  font-size: 16px;
+}
+
+.sidebar-username {
+  display: flex;
+  align-items: flex-start;
+  font-size: 12px;
+}
 
 /* Home CSS */
-.home{
+.home {
   height: fit-content;
   display: flex;
   flex-direction: column;
 }
+
 /* HomeTitle CSS */
-.homeTitle{
+.homeTitle {
   padding: 10px;
   border: 1px solid #ccc;
 }
 
 /* UserTweet CSS */
-.user-tweet{
+.user-tweet {
   border: 1px solid #ccc;
   display: flex;
   flex-direction: column;
 }
 
-.tweetArea{
+.tweetArea {
   display: flex;
 }
-.userPic{
+
+.userPic {
   padding: 3px;
 }
-.userPic img{
+
+.userPic img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
-.write-tweet-text{
+
+.write-tweet-text {
   width: 100%;
   padding: 0 10px;
 }
+
 textarea {
   width: -webkit-fill-available;
   height: 90px;
@@ -178,20 +225,24 @@ textarea {
   padding: 10px;
   font-size: 14px;
 }
-textarea::-webkit-scrollbar{
+
+textarea::-webkit-scrollbar {
   display: none;
 }
-textarea:focus{
+
+textarea:focus {
   outline: none;
 }
-.home-tweet-button{
+
+.home-tweet-button {
   padding-bottom: 5px;
   padding-right: 5px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.tweetButton{
+
+.tweetButton {
   border-radius: 25px;
   color: #fff;
   background-color: #8ecdf7;
@@ -201,12 +252,13 @@ textarea:focus{
   font-size: 15px;
   width: 20%;
 }
-.tweetButton:hover{
+
+.tweetButton:hover {
   background-color: #80b8de;
 }
 
 /* Tweets CSS */
-.tweet{
+.tweet {
   cursor: pointer;
   border: 1px solid #ccc;
   height: fit-content;
@@ -214,10 +266,12 @@ textarea:focus{
   padding: 8px;
   gap: 5px;
 }
-.tweet:hover{
+
+.tweet:hover {
   background-color: #f3f1f1;
 }
-.profile-pic{
+
+.profile-pic {
   padding: 4px;
   width: 50px;
   height: 50px;
@@ -225,58 +279,67 @@ textarea:focus{
 }
 
 /* Tweet Content CSS */
-.tweet-content{
+.tweet-content {
   width: 100%;
 }
 
 /* Tweet Header CSS */
-.tweet-header{
+.tweet-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: fit-content;
 }
-.header-user-info{
+
+.header-user-info {
   display: flex;
   gap: 5px;
 }
-.user-name{
+
+.user-name {
   font-size: 16px;
 }
-.user-name:hover{
+
+.user-name:hover {
   text-decoration: underline;
 }
-.user-handle{
+
+.user-handle {
   font-size: 14px;
   color: #8e99a1;
 }
-.header-more{
+
+.header-more {
   font-size: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header-more:hover{
+
+.header-more:hover {
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 50%;
   background-color: #8ecdf7;
 }
+
 /* Tweet Body CSS */
-.tweet-body{
+.tweet-body {
   padding-right: 15px;
 }
-.tweet-text{
+
+.tweet-text {
   margin-bottom: 10px;
 }
-.tweet-image{
+
+.tweet-image {
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 18px;
 }
 
 /* Footer CSS */
-.footer{
+.footer {
   width: 80%;
   padding: 3px;
   display: flex;
@@ -284,9 +347,11 @@ textarea:focus{
   align-items: center;
   font-size: 18px;
 }
-.footer-icons{
+
+.footer-icons {
   display: flex;
 }
-.footer-icons:hover{
+
+.footer-icons:hover {
   color: #8e99a1;
 }

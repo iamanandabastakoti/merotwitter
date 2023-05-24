@@ -53,10 +53,24 @@ const Sidebar = () => {
                         <div className="optionName">More</div>
                     </div>
                     <div className="optionList-button">
-                            <button className="tweet-button">Tweet</button>
+                        <button className="tweet-button">Tweet</button>
                     </div>
                     <div className="optionList">
-                        User Profile
+                        <div className="sidebar-user-profile">
+                            <img
+                                className="sidebar-profile-pic"
+                                src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Shah_Rukh_Khan_graces_the_launch_of_the_new_Santro.jpg"
+                                alt="Profile Picture"
+                            />
+                            <div className="sidebar-usser-info">
+                            <div className="sidebar-user-name">
+                                Ananda Bastakoti
+                            </div>
+                            <div className="sidebar-username">
+                                @iamanandabastakoti
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
