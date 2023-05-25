@@ -398,3 +398,66 @@ input{
 input:focus{
   outline: none;
 }
+
+.trend-list{
+  background-color: #eff3f4;
+  border-radius: 24px;
+  margin-top: 15px;
+  width: 320px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.trends-for-you{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.trending{
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.trending-card{
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.trending-card:hover{
+  background-color:#ccc;
+}
+.trend-details{
+  display: flex;
+  flex-direction: column;
+}
+.trending-title,
+.total-trend-tweets{
+  color: #8b979f;
+  font-size: 12px;
+}
+.trending-content{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.trend-more-option{
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  border-radius: 50%;
+}
+.trend-more-option:hover{
+  background-color: #8ecdf7;
+}
+
+.show-more{
+  cursor: pointer;
+  padding: 12px;
+  color: #1d9bf0;
+}
+.show-more:hover{
+  text-decoration: underline;
+}
