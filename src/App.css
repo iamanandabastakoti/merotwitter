@@ -25,9 +25,9 @@ body::-webkit-scrollbar {
   border-top: 1px solid #ccc;
 }
 
-.mainContents::-webkit-scrollbar {
+/* .mainContents::-webkit-scrollbar {
   display: none;
-}
+} */
 
 /* Trends CSS */
 .trends {
