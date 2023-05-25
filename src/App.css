@@ -315,11 +315,10 @@ textarea:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .header-more:hover {
-  cursor: pointer;
-  border: 1px solid #ccc;
   border-radius: 50%;
   background-color: #8ecdf7;
 }
