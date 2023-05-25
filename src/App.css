@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
 /* MainContents CSS */
 .mainContents {
   overflow-y: scroll;
-  flex: 4;
+  flex: 3.5;
   border-top: 1px solid #ccc;
 }
 
@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
   height: 100%;
   display: flex;
   align-content: space-between;
-  flex: 2.5;
+  flex: 2;
 }
 
 .sidebarLeft {
@@ -354,4 +354,46 @@ textarea:focus {
 
 .footer-icons:hover {
   color: #8e99a1;
+}
+
+
+/* Trends CSS */
+.trends{
+  overflow: hidden;
+  display: flex;
+}
+.trends-left{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trends-right{
+  flex: 1;
+}
+.trends-search-icon{
+  font-size: 25px;
+}
+.search-bar{
+  height: fit-content;
+  padding: 10px 10px;
+  background-color: #eff3f4;
+  border-radius: 24px;
+  width: 320px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.search-bar::after{
+  border: 1px solid black;
+}
+input{
+  background-color: #eff3f4;
+  width: 240px;
+  border: none;
+}
+input:focus{
+  outline: none;
 }
