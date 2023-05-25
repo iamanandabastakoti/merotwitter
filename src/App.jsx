@@ -7,7 +7,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Notifications from './pages/Notifications'
 
 const App = () => {
-  const [count, setCount] = useState(0)
 
   return (
     <>
