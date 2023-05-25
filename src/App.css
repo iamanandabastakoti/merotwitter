@@ -59,6 +59,7 @@ body::-webkit-scrollbar {
 }
 
 .appIcon {
+  color: #1d9bf0;
   flex: 2;
   display: flex;
   justify-content: flex-start;
