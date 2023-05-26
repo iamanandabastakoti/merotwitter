@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Trends from './components/Trends'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Notifications from './pages/Notifications'
+import SingleTweet from './pages/SingleTweet'
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
           <Routes>
             <Route index element={<Home />} />
             <Route path='/notifications' element={<Notifications />} />
+            <Route path='/tweet/:id' element={<SingleTweet />} />
           </Routes>
         </BrowserRouter>
         </div>

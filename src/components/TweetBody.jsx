@@ -1,6 +1,9 @@
 import React from 'react'
 
-const TweetBody = ({ tweet, image }) => {
+const TweetBody = ({ tweet, image, id }) => {
+
+  
+
   return (
     <div className='tweet-body'>
       <p className="tweet-text">{tweet}</p>
