@@ -16,7 +16,7 @@ const Tweet = ({ avatar, name, username, tweet, image, id }) => {
         <div className="tweet-content">
             <Header name={name} username={username} />
             <TweetBody tweet={tweet} image={image} id={id} />
-            <Footer />
+            <Footer id={id} />
         </div>
     </div>
   )
