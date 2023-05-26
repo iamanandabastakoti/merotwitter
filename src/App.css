@@ -361,6 +361,7 @@ textarea:focus {
 .trends{
   overflow: hidden;
   display: flex;
+  border: 1px solid #ccc;
 }
 .trends-left{
   flex: 3;
