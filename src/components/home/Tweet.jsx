@@ -2,17 +2,11 @@ import React from 'react'
 import Header from '../Header'
 import TweetBody from '../TweetBody'
 import Footer from '../Footer'
-import { useNavigate } from 'react-router-dom'
 
 const Tweet = ({ avatar, name, username, tweet, image, id }) => {
 
-  const navigate = useNavigate();
-  const navigateToTweet = () => {
-    navigate(`/tweet/${id}`);
-  }
-
   return (
-    <div onClick={navigateToTweet} className="tweet">
+    <div className="tweet">
         <img
             className="profile-pic"
             src={avatar}
