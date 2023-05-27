@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Header'
-import Footer from './Footer'
+import CommentFooter from './CommentFooter'
 
 const CommentDisplay = ({avatar, name, username, comment}) => {
   return (
@@ -14,7 +14,7 @@ const CommentDisplay = ({avatar, name, username, comment}) => {
         <div className="comment-contents">
         <Header name={name} username={ '@' + username} />
         <div className="comment"> {comment} </div>
-        <Footer />
+        <CommentFooter />
         </div>
     </div>
   )
