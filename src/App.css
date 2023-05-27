@@ -518,13 +518,14 @@ input:focus {
   font-size: 20px;
 }
 
-.comment-button{
+.comment-button {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 6px;
 }
-.commentButton{
+
+.commentButton {
   border-radius: 25px;
   color: #fff;
   background-color: #8ecdf7;
@@ -534,6 +535,27 @@ input:focus {
   font-size: 15px;
   width: 20%;
 }
+
 .commentButton:hover {
   background-color: #80b8de;
+}
+
+/* ALL Comment CSS */
+.all-comments {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.comment-contents {
+  width: 100%;
+  cursor: pointer;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+
+.comment {
+  padding: 10px 0px;
 }

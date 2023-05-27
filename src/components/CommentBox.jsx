@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import CommentDisplay from './CommentDisplay'
 
 const CommentBox = ({ id }) => {
 
@@ -56,6 +57,9 @@ const CommentBox = ({ id }) => {
                 <button onClick={handleComment} className="commentButton">Comment</button>
                 </div>
             </div>
+            {comments.map((data) => (
+                <CommentDisplay avatar={'https://avatars.githubusercontent.com/u/' + data.user.githubId + '?v=4'} name={data.user.fullname} username={data.user.name} comment={data.content} />
+            ))}
         </div>
     )
 }
