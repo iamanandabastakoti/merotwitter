@@ -18,6 +18,12 @@ body::-webkit-scrollbar {
   display: flex;
 }
 
+.loading-triangle{
+  display: flex;
+  justify-content: center;
+  height: 480px;
+}
+
 /* MainContents CSS */
 .mainContents {
   overflow-y: scroll;
