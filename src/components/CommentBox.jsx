@@ -77,9 +77,11 @@ const CommentBox = ({ id }) => {
                 </div>
                 : null
             }
+            <div className="show-all-comments">
             {comments.map((data) => (
                 <CommentDisplay avatar={'https://avatars.githubusercontent.com/u/' + data.user.githubId + '?v=4'} name={data.user.fullname} username={data.user.name} comment={data.content} />
             ))}
+            </div>
         </div>
     )
 }

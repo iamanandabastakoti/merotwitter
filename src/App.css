@@ -18,17 +18,19 @@ body::-webkit-scrollbar {
   display: flex;
 }
 
-.loading-triangle{
+.loading-triangle {
   display: flex;
   justify-content: center;
   height: 480px;
 }
-.loading-triangle-singletweet{
+
+.loading-triangle-singletweet {
   display: flex;
   justify-content: center;
   height: 80px;
 }
-.loading-comment{
+
+.loading-comment {
   display: flex;
   justify-content: center;
   height: 50px;
@@ -557,6 +559,11 @@ input:focus {
 }
 
 /* ALL Comment CSS */
+.show-all-comments {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .all-comments {
   display: flex;
   gap: 5px;
