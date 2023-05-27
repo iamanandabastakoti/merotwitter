@@ -23,6 +23,11 @@ body::-webkit-scrollbar {
   justify-content: center;
   height: 480px;
 }
+.loading-triangle-singletweet{
+  display: flex;
+  justify-content: center;
+  height: 80px;
+}
 
 /* MainContents CSS */
 .mainContents {
