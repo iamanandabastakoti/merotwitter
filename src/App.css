@@ -28,6 +28,11 @@ body::-webkit-scrollbar {
   justify-content: center;
   height: 80px;
 }
+.loading-comment{
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
 
 /* MainContents CSS */
 .mainContents {
