@@ -358,24 +358,28 @@ textarea:focus {
 
 
 /* Trends CSS */
-.trends{
+.trends {
   overflow: hidden;
   display: flex;
   border: 1px solid #ccc;
 }
-.trends-left{
+
+.trends-left {
   flex: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.trends-right{
+
+.trends-right {
   flex: 1;
 }
-.trends-search-icon{
+
+.trends-search-icon {
   font-size: 25px;
 }
-.search-bar{
+
+.search-bar {
   height: fit-content;
   padding: 10px 10px;
   background-color: #eff3f4;
@@ -387,19 +391,22 @@ textarea:focus {
   align-items: center;
   gap: 10px;
 }
-.search-bar::after{
+
+.search-bar::after {
   border: 1px solid black;
 }
-input{
+
+input {
   background-color: #eff3f4;
   width: 240px;
   border: none;
 }
-input:focus{
+
+input:focus {
   outline: none;
 }
 
-.trend-list{
+.trend-list {
   background-color: #eff3f4;
   border-radius: 24px;
   margin-top: 15px;
@@ -409,55 +416,124 @@ input:focus{
   flex-direction: column;
   gap: 2px;
 }
-.trends-for-you{
+
+.trends-for-you {
   padding: 10px;
   display: flex;
   align-items: center;
 }
-.trending{
+
+.trending {
   height: fit-content;
   display: flex;
   flex-direction: column;
 }
-.trending-card{
+
+.trending-card {
   cursor: pointer;
   padding: 12px 10px;
   display: flex;
   justify-content: space-between;
 }
-.trending-card:hover{
-  background-color:#ccc;
+
+.trending-card:hover {
+  background-color: #ccc;
 }
-.trend-details{
+
+.trend-details {
   display: flex;
   flex-direction: column;
 }
+
 .trending-title,
-.total-trend-tweets{
+.total-trend-tweets {
   color: #8b979f;
   font-size: 12px;
 }
-.trending-content{
+
+.trending-content {
   font-size: 15px;
   font-weight: 500;
 }
 
-.trend-more-option{
+.trend-more-option {
   display: flex;
   width: 30px;
   height: 30px;
   justify-content: center;
   border-radius: 50%;
 }
-.trend-more-option:hover{
+
+.trend-more-option:hover {
   background-color: #8ecdf7;
 }
 
-.show-more{
+.show-more {
   cursor: pointer;
   padding: 12px;
   color: #1d9bf0;
 }
-.show-more:hover{
+
+.show-more:hover {
   text-decoration: underline;
+}
+
+
+/* Comment Box CSS */
+.comment-box {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.add-comment {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+}
+
+.comment-area {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px;
+  border-bottom: 1px solid #ccc;
+}
+
+.comment-userPic {
+  padding: 3px;
+}
+
+.comment-userPic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.comment-textarea {
+  height: 80px;
+  border-bottom: 1px solid #ccc;
+  padding: 6px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.comment-button{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 6px;
+}
+.commentButton{
+  border-radius: 25px;
+  color: #fff;
+  background-color: #8ecdf7;
+  border: none;
+  cursor: pointer;
+  padding: 9px;
+  font-size: 15px;
+  width: 20%;
+}
+.commentButton:hover {
+  background-color: #80b8de;
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import Tweet from '../components/home/Tweet';
 import axios from 'axios';
+import CommentBox from '../components/CommentBox';
 
 const SingleTweet = () => {
 
@@ -24,6 +25,8 @@ const SingleTweet = () => {
     {
       tweet ? <Tweet avatar={'https://avatars.githubusercontent.com/u/' + tweet.user.githubId + '?v=4'} name={tweet.user.fullname} username={'@' + tweet.user.name} tweet={tweet.content} image={tweet.image} key={tweet._id} /> : null
     }
+
+    <CommentBox id={id} />
     </>
   )
 }
