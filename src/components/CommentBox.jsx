@@ -4,7 +4,7 @@ import CommentDisplay from './CommentDisplay'
 import { Comment } from 'react-loader-spinner'
 
 const CommentBox = ({ id }) => {
-
+    const [shouldRefresh, setShouldRefresh] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
 
     const [comment, setComment] = useState('');
@@ -23,6 +23,7 @@ const CommentBox = ({ id }) => {
                 },
             });
             setComment("");
+            setShouldRefresh((v) => !v);
         } catch (error) {
             alert('Error commenting!');
         }
@@ -46,7 +47,7 @@ const CommentBox = ({ id }) => {
 
     useEffect(() => {
         fetchComments();
-    }, []);
+    }, [shouldRefresh]);
 
     return (
         <div className="comment-box">
