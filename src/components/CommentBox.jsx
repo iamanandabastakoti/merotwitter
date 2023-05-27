@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const CommentBox = ({ id }) => {
 
@@ -23,6 +23,25 @@ const CommentBox = ({ id }) => {
             alert('Error commenting!');
         }
     }
+
+    // fetching comment data from API
+    const [comments, getComments] = useState([]);
+    const fetchComments = async () => {
+        try{
+            const comments = await axios.get(`https://react-workshop-todo.fly.dev/posts/${id}`, {
+                headers: {
+                    apiKey: `${import.meta.env.VITE_API_KEY}`
+                }
+            });
+            getComments((comments.data.post.comments));
+        } catch(error) {
+            alert("Error fetching commenst!");
+        }
+    };
+    
+    useEffect(() => {
+        fetchComments();
+    }, []);
 
     return (
         <div className="comment-box">
