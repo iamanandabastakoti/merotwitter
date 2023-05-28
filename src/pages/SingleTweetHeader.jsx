@@ -1,9 +1,17 @@
 import React from 'react'
 import { BiArrowBack } from "react-icons/bi";
+import { useNavigate } from 'react-router-dom';
 
 const SingleTweetHeader = () => {
+
+    const navigate = useNavigate();
+    const navigateToHome = () => {
+        navigate(`/`);
+    }
+
+
     return (
-        <div className="single-tweet-header">
+        <div onClick={navigateToHome} className="single-tweet-header">
             <div className="single-tweet-header-icon">
                 <BiArrowBack />
             </div>
