@@ -4,6 +4,7 @@ import Tweet from '../components/home/Tweet';
 import axios from 'axios';
 import CommentBox from '../components/CommentBox';
 import { Triangle } from 'react-loader-spinner'
+import SingleTweetHeader from './SingleTweetHeader';
 
 const SingleTweet = () => {
 
@@ -26,6 +27,7 @@ const SingleTweet = () => {
 
   return (
     <>
+    <SingleTweetHeader />
       {isLoading ?
         <div className="loading-triangle-singletweet">
           <Triangle
