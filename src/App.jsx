@@ -5,6 +5,11 @@ import Trends from './components/Trends'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Notifications from './pages/Notifications'
 import SingleTweet from './pages/SingleTweet'
+import Explore from './pages/Explore'
+import Messages from './pages/Messages'
+import Lists from './pages/Lists'
+import Bookmarks from './pages/Bookmarks'
+import TwitterBlue from './pages/TwitterBlue'
 
 const App = () => {
 
@@ -16,7 +21,12 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route index element={<Home />} />
+            <Route path='/explore' element={<Explore />} />
             <Route path='/notifications' element={<Notifications />} />
+            <Route path='/messages' element={<Messages />} />
+            <Route path='/lists' element={<Lists />} />
+            <Route path='/bookmarks' element={<Bookmarks />} />
+            <Route path='/twitterblue' element={<TwitterBlue />} />
             <Route path='/tweet/:id' element={<SingleTweet />} />
           </Routes>
         </BrowserRouter>
