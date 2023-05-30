@@ -16,19 +16,19 @@ const CommentFooter = ({id}) => {
   }
   return (
     <div className="footer">
-      <div className="footer-icons">
+      <div className="footer-icons footer-comment">
         <FaRegComment />
       </div>
-      <div onClick={retweet} className="footer-icons">
+      <div onClick={retweet} className="footer-icons footer-retweet">
         {isRetweeted ? <AiOutlineRetweet color='#00ba7c' /> : <AiOutlineRetweet /> } 
       </div>
-      <div onClick={reactTweet} className="footer-icons">
-        {isLiked ? <FaHeart color='red' /> : <FaRegHeart /> } 
+      <div onClick={reactTweet} className="footer-icons footer-react">
+        {isLiked ? <FaHeart color='#f91880' /> : <FaRegHeart /> } 
       </div>
-      <div className="footer-icons">
+      <div className="footer-icons footer-interactions">
         <FaRegChartBar />
       </div>
-      <div className="footer-icons">
+      <div className="footer-icons footer-share">
         <BsUpload />
       </div>
     </div>
