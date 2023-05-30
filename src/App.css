@@ -368,10 +368,22 @@ textarea:focus {
 
 .footer-icons {
   display: flex;
+  padding: 8px;
+  border-radius: 50%;
 }
-
-.footer-icons:hover {
-  color: #8e99a1;
+.footer-comment:hover,
+.footer-interactions:hover,
+.footer-share:hover{
+  color: #1d9bf0;
+  background-color: #c1e0f5;
+}
+.footer-retweet:hover{
+  color: #00ba7c;
+  background-color: #bdeddd;
+}
+.footer-react:hover{
+  color: #f91880;
+  background-color: #fdc1dd;
 }
 
 
@@ -571,7 +583,8 @@ input:focus {
   padding: 5px;
   border: 1px solid #ccc;
 }
-.all-comments:hover{
+
+.all-comments:hover {
   background-color: #f3f1f1;
 }
 
@@ -589,7 +602,7 @@ input:focus {
 }
 
 /* SingleTweet Header CSS */
-.single-tweet-header{
+.single-tweet-header {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -597,7 +610,8 @@ input:focus {
   border: 1px solid #ccc;
   padding: 0px 10px;
 }
-.single-tweet-header-icon{
+
+.single-tweet-header-icon {
   cursor: pointer;
   border-radius: 50%;
   width: 36px;
@@ -607,10 +621,12 @@ input:focus {
   justify-content: center;
   font-size: 20px;
 }
-.single-tweet-header-icon:hover{
+
+.single-tweet-header-icon:hover {
   background-color: #f3f1f1;
 }
-.single-tweet-title{
+
+.single-tweet-title {
   display: flex;
   align-items: center;
   font-size: 25px;
