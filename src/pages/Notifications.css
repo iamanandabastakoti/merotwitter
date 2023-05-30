@@ -1,0 +1,8 @@
+.notification-section {
+    height: fit-content;
+}
+
+.notification-title {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
