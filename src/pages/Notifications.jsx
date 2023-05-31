@@ -1,5 +1,5 @@
 import React from 'react'
-import './Notifications.css'
+import './Pages.css'
 import Tweet from '../components/home/Tweet'
 
 const Notifications = () => {

@@ -1,0 +1,21 @@
+.explore-section,
+.notification-section,
+.messages-section,
+.lists-section,
+.bookmarks-section,
+.twitter-blue-section
+{
+    height: fit-content;
+}
+
+.explore-title,
+.notification-title,
+.messages-title,
+.lists-title,
+.bookmarks-title,
+.twitter-blue-title 
+{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
