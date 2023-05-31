@@ -19,3 +19,21 @@
     border: 1px solid #ccc;
 }
 
+.bookmarks-username{
+    color: #536471;
+    font-size: 15px;
+}
+.bookmarks-content{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bookmarks-image{
+    width: 350px;
+}
+.bookmarks-description-content{
+    width: 375px;
+}
+
