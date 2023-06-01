@@ -25,7 +25,16 @@ const Trends = () => {
       trendingContent: '#ViratKohli🐐',
       totalTweets: '100K Tweets'
     },
-
+    {
+      trendTitle: 'Sports - Trending',
+      trendingContent: '#INDvsAUS',
+      totalTweets: '2,683 Tweets'
+    },
+    {
+      trendTitle: 'Sports - Trending',
+      trendingContent: '#WTCFinal',
+      totalTweets: '5,766 Tweets'
+    },
   ]
 
   return (
