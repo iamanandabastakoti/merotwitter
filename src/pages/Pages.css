@@ -37,3 +37,26 @@
     width: 375px;
 }
 
+
+.messages-content{
+    gap: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.messages-description-content{
+    width: 400px;
+}
+.message-button{
+    cursor: pointer;
+    color: #fff;
+    padding: 15px;
+    background-color: #1d9bf0;
+    border-radius: 27px;
+    border: 2px solid black;
+}
+.message-button:hover{
+    background-color: #0c8de4;
+}
