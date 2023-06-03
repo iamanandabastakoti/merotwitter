@@ -16,11 +16,6 @@ const Trends = () => {
       totalTweets: '184K Tweets'
     },
     {
-      trendTitle: 'Entertainment - Trending',
-      trendingContent: '#SRK🐐',
-      totalTweets: '190K Tweets'
-    },
-    {
       trendTitle: 'Sports - Trending',
       trendingContent: '#ViratKohli🐐',
       totalTweets: '100K Tweets'
@@ -29,11 +24,6 @@ const Trends = () => {
       trendTitle: 'Sports - Trending',
       trendingContent: '#INDvsAUS',
       totalTweets: '2,683 Tweets'
-    },
-    {
-      trendTitle: 'Sports - Trending',
-      trendingContent: '#WTCFinal',
-      totalTweets: '5,766 Tweets'
     },
   ]
 
