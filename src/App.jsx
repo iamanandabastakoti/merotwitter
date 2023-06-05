@@ -10,6 +10,7 @@ import Messages from './pages/Messages'
 import Lists from './pages/Lists'
 import Bookmarks from './pages/Bookmarks'
 import TwitterBlue from './pages/TwitterBlue'
+import UserProfile from './pages/UserProfile'
 
 const App = () => {
 
@@ -28,6 +29,7 @@ const App = () => {
             <Route path='/bookmarks' element={<Bookmarks />} />
             <Route path='/twitterblue' element={<TwitterBlue />} />
             <Route path='/tweet/:id' element={<SingleTweet />} />
+            <Route path='/profile/:userkey' element={<UserProfile />} />
           </Routes>
         </div>
         <Trends />

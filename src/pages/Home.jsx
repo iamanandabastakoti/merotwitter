@@ -44,7 +44,7 @@ const Home = () => {
       : null
       }
       {users.map(({ user, content, image, _id }) => {
-        return <Tweet avatar={'https://avatars.githubusercontent.com/u/' + user.githubId + '?v=4'} name={user.fullname} username={'@' + user.name} tweet={content} image={image} key={user.id} id={_id} />
+        return <Tweet avatar={'https://avatars.githubusercontent.com/u/' + user.githubId + '?v=4'} name={user.fullname} username={'@' + user.name} tweet={content} image={image} userkey={user._id} id={_id} />
       })}
     </div>
   )
