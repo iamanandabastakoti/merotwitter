@@ -1,6 +1,9 @@
 import React from 'react'
 
 const Bookmarks = () => {
+
+  {document.title='Mero Twitter - Bookmarks'}
+
   return (
     <div className="bookmarks-section">
       <div className="bookmarks-title">

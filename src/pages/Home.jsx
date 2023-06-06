@@ -7,6 +7,8 @@ import { Triangle } from 'react-loader-spinner'
 
 const Home = () => {
 
+  {document.title='Mero Twitter - Home'}
+
   const [isLoading, setIsLoading] = useState(true);
 
   const [users, setUsers] = useState([]);

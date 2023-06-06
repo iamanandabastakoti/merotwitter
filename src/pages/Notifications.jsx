@@ -4,6 +4,8 @@ import Tweet from '../components/home/Tweet'
 
 const Notifications = () => {
 
+  {document.title='Mero Twitter - Notifications'}
+
   const notifications = [
     {
       avatar: 'https://scontent.fbhr1-1.fna.fbcdn.net/v/t1.6435-9/95362865_2011048162372837_5244616747335548928_n.png?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4rX7OheMOlwAX8fxBxC&_nc_ht=scontent.fbhr1-1.fna&oh=00_AfA78tZiSpuZVtTqMBtMcqm6txgPBRDfd5Hge16ZxMTVyg&oe=649CE572',

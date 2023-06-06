@@ -1,6 +1,9 @@
 import React from 'react'
 
 const Messages = () => {
+
+  {document.title='Mero Twitter - Messages'}
+
   return (
     <div className="messages-section">
       <div className="messages-title">
