@@ -106,6 +106,7 @@ body::-webkit-scrollbar {
 }
 
 .optionList {
+  height: fit-content;
   cursor: pointer;
   font-size: 25px;
   padding: 8px;
@@ -117,7 +118,10 @@ body::-webkit-scrollbar {
   align-items: center;
   gap: .5rem;
 }
-
+.optionList .icon{
+  height: 100%;
+  display: flex;
+}
 .optionList:hover {
   padding-left: 10px;
   padding-right: 25px;
