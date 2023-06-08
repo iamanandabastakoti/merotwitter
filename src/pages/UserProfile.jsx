@@ -11,6 +11,10 @@ const UserProfile = () => {
     navigate('/');
   }
 
+  const [fullName, setFullName] = useState([]);
+  const [username, setUsername] = useState([]);
+  const [profilePicture, setProfilePicture] = useState([]);
+
   const { userkey } = useParams();
   const [users, setUsers] = useState([]);
   const fetchTweets = async () => {
@@ -26,6 +30,12 @@ const UserProfile = () => {
     fetchTweets();
   }, []);
 
+  users.map(({ user }) => {
+    fullName.push(user.fullname);
+    username.push(user.name);
+    profilePicture.push('https://avatars.githubusercontent.com/u/' + user.githubId + '?v=4');
+  })
+
   return (
     <>
       <div className="user-profile">
@@ -34,16 +44,16 @@ const UserProfile = () => {
             <BiArrowBack />
           </div>
           <div className="user-profile-title">
-            Ananda Bastakoti
+            {fullName[0]}
           </div>
         </div>
         <div className="user-profile-info">
           <div className="user-profile-picture">
-            <img src="https://avatars.githubusercontent.com/u/105543272?v=4" alt="Profile Picture" />
+            <img src={profilePicture[0]} alt="Profile Picture" />
           </div>
           <div className="user-name-info">
-            <h3>Ananda Bastakoti</h3>
-            <span>@iamanandabastakoti</span>
+            <h3>{fullName[0]}</h3>
+            <span>{'@' + username[0]}</span>
           </div>
         </div>
         <div className="user-all-tweets">
