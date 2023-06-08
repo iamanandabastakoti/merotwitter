@@ -69,6 +69,7 @@
 
 .user-profile-header {
     display: flex;
+    height: fit-content;
     align-items: center;
     gap: 12px;
     border: 1px solid #ccc;
@@ -107,6 +108,7 @@
     border: 1px solid #ccc;
 }
 .user-profile-picture img{
+    cursor: pointer;
     height: 71px;
     border-radius: 50%;
     border: 3px solid #1d9bf0;

@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Tweet from '../components/home/Tweet'
 import { BiArrowBack } from "react-icons/bi";
+import axios from 'axios';
 
 const UserProfile = () => {
 
@@ -11,6 +12,19 @@ const UserProfile = () => {
   }
 
   const { userkey } = useParams();
+  const [users, setUsers] = useState([]);
+  const fetchTweets = async () => {
+    const posts = await axios.get('https://react-workshop-todo.fly.dev/posts/profile/' + userkey , {
+      headers: {
+        apiKey: `${import.meta.env.VITE_API_KEY}`
+      }
+    });
+    setUsers(posts.data);
+  };
+
+  useEffect(() => {
+    fetchTweets();
+  }, []);
 
   return (
     <>
@@ -33,7 +47,9 @@ const UserProfile = () => {
           </div>
         </div>
         <div className="user-all-tweets">
-          <Tweet avatar='https://avatars.githubusercontent.com/u/105543272?v=4' name='Ananda Bastakoti' username='@iamanandabastakoti' tweet='My Profile' image='https://avatars.githubusercontent.com/u/105543272?v=4' />
+          {users.map(({ user, content, image, _id }) => {
+            return <Tweet avatar={'https://avatars.githubusercontent.com/u/' + user.githubId + '?v=4'} name={user.fullname} username={'@' + user.name} tweet={content} image={image} userkey={user._id} id={_id} />
+          })}
         </div>
       </div>
     </>
