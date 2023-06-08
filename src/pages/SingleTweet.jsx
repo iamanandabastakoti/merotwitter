@@ -43,7 +43,7 @@ const SingleTweet = () => {
         : null
       }
       {
-        tweet ? <Tweet avatar={'https://avatars.githubusercontent.com/u/' + tweet.user.githubId + '?v=4'} name={tweet.user.fullname} username={'@' + tweet.user.name} tweet={tweet.content} image={tweet.image} key={tweet._id} /> : null
+        tweet ? <Tweet avatar={'https://avatars.githubusercontent.com/u/' + tweet.user.githubId + '?v=4'} name={tweet.user.fullname} username={'@' + tweet.user.name} tweet={tweet.content} image={tweet.image} userkey={tweet.user._id} /> : null
       }
 
       <CommentBox id={id} />
