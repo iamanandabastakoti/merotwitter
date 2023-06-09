@@ -34,6 +34,7 @@ const UserProfile = () => {
     fullName.push(user.fullname);
     username.push(user.name);
     profilePicture.push('https://avatars.githubusercontent.com/u/' + user.githubId + '?v=4');
+    {document.title = `@` + `${username[0]}` + ` / Mero Twitter`}
   })
 
   return (
