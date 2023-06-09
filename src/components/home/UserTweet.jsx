@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 
-const UserTweet = ({ setShouldRefresh }) => {
+const UserTweet = ({ setShouldRefresh, profilePicture }) => {
     let [tweetContent, setTweetContent] = useState("");
 
     const upload = async () => {
@@ -29,7 +29,7 @@ const UserTweet = ({ setShouldRefresh }) => {
         <div className="user-tweet">
             <div className="tweetArea">
                 <div className="userPic">
-                    <img src="https://avatars.githubusercontent.com/u/105543272?v=4" alt="User Profile Picture" />
+                    <img src={profilePicture} alt="User Profile Picture" />
                 </div>
                 <div className="write-tweet-text">
                 <textarea className='tweet-textarea' id="tweet" name="tweet" placeholder="What is happening?!" required value={tweetContent} onChange={(e) => setTweetContent(e.target.value)} ></textarea>
