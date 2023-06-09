@@ -6,13 +6,14 @@ import { FiMail } from 'react-icons/fi'
 import { RiTodoLine } from 'react-icons/ri'
 import { TiSocialTwitterCircular } from 'react-icons/ti'
 import { CiCircleMore } from 'react-icons/ci'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 
 const Sidebar = () => {
     const [fullName, setFullName] = useState([]);
     const [username, setUsername] = useState([]);
     const [profilePicture, setProfilePicture] = useState([]);
+    const [userId, setUserId] = useState([]);
 
     const [users, setUsers] = useState([]);
     const fetchUser = async () => {
@@ -32,7 +33,13 @@ const Sidebar = () => {
         fullName.push(user.fullname);
         username.push(user.name);
         profilePicture.push('https://avatars.githubusercontent.com/u/' + user.githubId + '?v=4');
+        userId.push(user._id);
     })
+
+    const navigate = useNavigate();
+    const navigateToProfile = () => {
+        navigate(`/profile/${userId[0]}`)
+    }
 
     return (
         <div className="sidebar">
@@ -100,7 +107,7 @@ const Sidebar = () => {
                         <button className="tweet-button">Tweet</button>
                     </div>
                     <div className="optionList">
-                        <div className="sidebar-user-profile">
+                        <div onClick={navigateToProfile} className="sidebar-user-profile">
                             <img
                                 className="sidebar-profile-pic"
                                 src={profilePicture[0]}
