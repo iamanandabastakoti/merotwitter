@@ -1,7 +1,8 @@
 import axios from 'axios';
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
-const UserTweet = ({ setShouldRefresh, profilePicture }) => {
+const UserTweet = ({ setShouldRefresh, profilePicture, userKey }) => {
     let [tweetContent, setTweetContent] = useState("");
 
     const upload = async () => {
@@ -25,10 +26,15 @@ const UserTweet = ({ setShouldRefresh, profilePicture }) => {
         upload();
     }
 
+    const navigate = useNavigate();
+    const navigateToProfile = () => {
+        navigate(`/profile/${userKey}`)
+    }
+
     return (
         <div className="user-tweet">
             <div className="tweetArea">
-                <div className="userPic">
+                <div onClick={navigateToProfile} className="userPic">
                     <img src={profilePicture} alt="User Profile Picture" />
                 </div>
                 <div className="write-tweet-text">

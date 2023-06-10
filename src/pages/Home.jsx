@@ -10,6 +10,7 @@ const Home = () => {
   {document.title='Mero Twitter - Home'}
 
   const [isLoading, setIsLoading] = useState(true);
+  const [userKey, setUserKey] = useState([]);
   const [profilePicture, setProfilePicture] = useState([]);
 
   const [users, setUsers] = useState([]);
@@ -29,13 +30,14 @@ const Home = () => {
   }, [shouldRefresh]);
 
   users.map(({user}) => {
+    userKey.push(user._id);
     profilePicture.push('https://avatars.githubusercontent.com/u/' + user.githubId + '?v=4');
   })
 
   return (
     <div className="home">
       <HomeTitle />
-      <UserTweet profilePicture={profilePicture[0]} setShouldRefresh={setShouldRefresh} />
+      <UserTweet userKey={userKey[0]} profilePicture={profilePicture[0]} setShouldRefresh={setShouldRefresh} />
       {isLoading ? 
       <div className="loading-triangle">
         <Triangle
