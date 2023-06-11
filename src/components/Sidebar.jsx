@@ -8,12 +8,15 @@ import { TiSocialTwitterCircular } from 'react-icons/ti'
 import { CiCircleMore } from 'react-icons/ci'
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
+import { Triangle } from 'react-loader-spinner'
 
 const Sidebar = () => {
     const [fullName, setFullName] = useState([]);
     const [username, setUsername] = useState([]);
     const [profilePicture, setProfilePicture] = useState([]);
     const [userId, setUserId] = useState([]);
+
+    const [isLoading, setIsLoading] = useState(true);
 
     const [users, setUsers] = useState([]);
     const fetchUser = async () => {
@@ -23,6 +26,7 @@ const Sidebar = () => {
             }
         });
         setUsers(profile.data);
+        setIsLoading(false);
     }
 
     useEffect(() => {
@@ -107,21 +111,34 @@ const Sidebar = () => {
                         <button className="tweet-button">Tweet</button>
                     </div>
                     <div className="optionList">
-                        <div onClick={navigateToProfile} className="sidebar-user-profile">
-                            <img
-                                className="sidebar-profile-pic"
-                                src={profilePicture[0]}
-                                alt="Profile Picture"
-                            />
-                            <div className="sidebar-usser-info">
-                                <div className="sidebar-user-name">
-                                    {fullName[0]}
+                        {
+                            isLoading ?
+                                <Triangle
+                                    height="50"
+                                    width="50"
+                                    color="#1d9bf0"
+                                    ariaLabel="triangle-loading"
+                                    wrapperStyle={{}}
+                                    wrapperClassName=""
+                                    visible={true}
+                                />
+                                :
+                                <div onClick={navigateToProfile} className="sidebar-user-profile">
+                                    <img
+                                        className="sidebar-profile-pic"
+                                        src={profilePicture[0]}
+                                        alt="Profile Picture"
+                                    />
+                                    <div className="sidebar-usser-info">
+                                        <div className="sidebar-user-name">
+                                            {fullName[0]}
+                                        </div>
+                                        <div className="sidebar-username">
+                                            {`@` + username[0]}
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="sidebar-username">
-                                    {`@` + username[0]}
-                                </div>
-                            </div>
-                        </div>
+                        }
                     </div>
                 </div>
             </div>
