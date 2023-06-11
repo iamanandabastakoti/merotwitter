@@ -95,7 +95,7 @@ const Sidebar = () => {
                             <div className="optionName">Twitter Blue</div>
                         </div>
                     </Link>
-                    <Link>
+                    <Link to={`/profile/${userId[0]}`} >
                         <div className="optionList">
                             <div className="icon"><BiUser /></div>
                             <div className="optionName">Profile</div>
