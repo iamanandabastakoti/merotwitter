@@ -1,3 +1,69 @@
+/* LogIn CSS */
+.log-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 6px;
+    width: 25rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.merotwitter-logo{
+    color: #1d9bf0;
+    font-size: 30px;
+    height: fit-content;
+}
+.sigin-twitter{
+    height: fit-content;
+}
+.login-apikey-input{
+    padding: 5px;
+    height: fit-content;
+}
+.apikey-input{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 20rem;
+    height: 2rem;
+    background-color: #fff;
+    font-size: 15px;
+}
+.login-button{
+    height: fit-content;
+}
+.login{
+    cursor: pointer;
+    color: #fff;
+    background-color: #1d9bf0;
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+}
+.login:hover{
+    background-color: #0c8de4;
+}
+.no-account{
+    height: fit-content;
+}
+.sign-up{
+    color: #1d9bf0;
+}
+.sign-up:hover{
+    text-decoration: underline;
+}
+
 .explore-section,
 .notification-section,
 .messages-section,

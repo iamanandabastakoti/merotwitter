@@ -11,6 +11,7 @@ import Lists from './pages/Lists'
 import Bookmarks from './pages/Bookmarks'
 import TwitterBlue from './pages/TwitterBlue'
 import UserProfile from './pages/UserProfile'
+import LogIn from './pages/LogIn'
 
 const App = () => {
 
@@ -20,7 +21,7 @@ const App = () => {
         <Sidebar />
         <div className="mainContents">
           <Routes>
-            <Route index element={<Home />} />
+            <Route index element={<LogIn />} />
             <Route path='/' element={<Home />} />
             <Route path='/explore' element={<Explore />} />
             <Route path='/notifications' element={<Notifications />} />
