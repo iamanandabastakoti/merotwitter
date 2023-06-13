@@ -21,7 +21,7 @@ const App = () => {
         <Sidebar />
         <div className="mainContents">
           <Routes>
-            <Route index element={<LogIn />} />
+            <Route index element={<Home />} />
             <Route path='/home' element={<Home />} />
             <Route path='/explore' element={<Explore />} />
             <Route path='/notifications' element={<Notifications />} />

@@ -3,14 +3,14 @@ import './Pages.css'
 import { BsTwitter } from 'react-icons/bs'
 import { useNavigate } from 'react-router-dom'
 
-const LogIn = () => {
+const LogIn = ({setLoggedIn}) => {
 
     { document.title = 'LogIn to MeroTwitter' }
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
     const navigateToHome = () => {
         if(password === 'iamananda') {
-            navigate('/home');
+            setLoggedIn((v) => !v);
         } else if(password === '') {
             alert('Please Enter Your Password To Log In');
         } else {
