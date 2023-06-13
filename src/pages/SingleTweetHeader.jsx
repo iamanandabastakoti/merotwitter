@@ -6,7 +6,7 @@ const SingleTweetHeader = () => {
 
     const navigate = useNavigate();
     const navigateToHome = () => {
-        navigate(`/`);
+        navigate(`/home`);
     }
 
 

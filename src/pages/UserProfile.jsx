@@ -11,7 +11,7 @@ const UserProfile = () => {
 
   const navigate = useNavigate();
   const navigateToHome = () => {
-    navigate('/');
+    navigate('/home');
   }
 
   const [fullName, setFullName] = useState([]);

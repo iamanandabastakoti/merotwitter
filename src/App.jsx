@@ -22,7 +22,7 @@ const App = () => {
         <div className="mainContents">
           <Routes>
             <Route index element={<LogIn />} />
-            <Route path='/' element={<Home />} />
+            <Route path='/home' element={<Home />} />
             <Route path='/explore' element={<Explore />} />
             <Route path='/notifications' element={<Notifications />} />
             <Route path='/messages' element={<Messages />} />

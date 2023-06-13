@@ -53,7 +53,7 @@ const Sidebar = () => {
                     <div className="appIcon optionList">
                         <BsTwitter />
                     </div>
-                    <Link to='/'>
+                    <Link to='/home'>
                         <div className="optionList">
                             <div className="icon"><BiHomeCircle /></div>
                             <div className="optionName">Home</div>
