@@ -1,10 +1,11 @@
 /* LogIn CSS */
-.log-in{
+.log-in {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.login-container{
+
+.login-container {
     border: 1px solid #ccc;
     border-radius: 10px;
     height: fit-content;
@@ -17,19 +18,23 @@
     justify-content: center;
     gap: 10px;
 }
-.merotwitter-logo{
+
+.merotwitter-logo {
     color: #1d9bf0;
     font-size: 30px;
     height: fit-content;
 }
-.sigin-twitter{
+
+.sigin-twitter {
     height: fit-content;
 }
-.login-apikey-input{
+
+.login-apikey-input {
     padding: 5px;
     height: fit-content;
 }
-.apikey-input{
+
+.apikey-input {
     padding: 6px 10px;
     border: 1px solid #ccc;
     border-radius: 20px;
@@ -38,10 +43,12 @@
     background-color: #fff;
     font-size: 15px;
 }
-.login-button{
+
+.login-button {
     height: fit-content;
 }
-.login{
+
+.login {
     cursor: pointer;
     color: #fff;
     background-color: #1d9bf0;
@@ -51,16 +58,20 @@
     border: none;
     border-radius: 20px;
 }
-.login:hover{
+
+.login:hover {
     background-color: #0c8de4;
 }
-.no-account{
+
+.no-account {
     height: fit-content;
 }
-.sign-up{
+
+.sign-up {
     color: #1d9bf0;
 }
-.sign-up:hover{
+
+.sign-up:hover {
     text-decoration: underline;
 }
 
@@ -69,8 +80,7 @@
 .messages-section,
 .lists-section,
 .bookmarks-section,
-.twitter-blue-section
-{
+.twitter-blue-section {
     height: fit-content;
 }
 
@@ -79,32 +89,34 @@
 .messages-title,
 .lists-title,
 .bookmarks-title,
-.twitter-blue-title 
-{
+.twitter-blue-title {
     padding: 10px;
     border: 1px solid #ccc;
 }
 
-.bookmarks-username{
+.bookmarks-username {
     color: #536471;
     font-size: 15px;
 }
-.bookmarks-content{
+
+.bookmarks-content {
     margin-top: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.bookmarks-image{
+
+.bookmarks-image {
     width: 350px;
 }
-.bookmarks-description-content{
+
+.bookmarks-description-content {
     width: 375px;
 }
 
 
-.messages-content{
+.messages-content {
     gap: 10px;
     margin-top: 15px;
     display: flex;
@@ -112,10 +124,12 @@
     justify-content: center;
     align-items: center;
 }
-.messages-description-content{
+
+.messages-description-content {
     width: 400px;
 }
-.message-button{
+
+.message-button {
     cursor: pointer;
     color: #fff;
     padding: 15px;
@@ -123,12 +137,13 @@
     border-radius: 27px;
     border: 2px solid black;
 }
-.message-button:hover{
+
+.message-button:hover {
     background-color: #0c8de4;
 }
 
 /* UserProfile CSS */
-.user-profile{
+.user-profile {
     display: flex;
     flex-direction: column;
 }
@@ -140,9 +155,9 @@
     gap: 12px;
     border: 1px solid #ccc;
     padding: 5px 10px;
-  }
-  
-  .user-profile-header-icon {
+}
+
+.user-profile-header-icon {
     cursor: pointer;
     border-radius: 50%;
     width: 36px;
@@ -151,21 +166,21 @@
     align-items: center;
     justify-content: center;
     font-size: 20px;
-  }
-  
-  .user-profile-header-icon:hover {
+}
+
+.user-profile-header-icon:hover {
     background-color: #f3f1f1;
-  }
-  
-  .user-profile-title {
+}
+
+.user-profile-title {
     cursor: pointer;
     display: flex;
     align-items: center;
     font-size: 20px;
     font-weight: 500;
-  }
+}
 
-.user-profile-info{
+.user-profile-info {
     height: fit-content;
     padding: 8px;
     display: flex;
@@ -173,21 +188,81 @@
     align-items: center;
     border: 1px solid #ccc;
 }
-.user-profile-picture img{
+
+.user-profile-picture img {
     cursor: pointer;
     height: 71px;
     border-radius: 50%;
     border: 3px solid #1d9bf0;
 }
-.user-name-info{
+
+.user-name-info {
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .user-name-info h3 {
     font-size: 21px
 }
+
 .user-name-info span {
     font-size: 14px;
+}
+
+
+/* Login Page Media Query */
+@media screen and (max-width: 515px) {
+    .login-container {
+        width: 18rem;
+        height: 20rem;
+        gap: 6px;
+    }
+
+    .apikey-input {
+        width: 15rem;
+        height: 1.5rem;
+    }
+
+    .login {
+        width: 4rem;
+        height: 1.9rem;
+        font-size: 16px;
+    }
+
+    .no-account {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 357px) {
+    .login-container {
+        width: 14rem;
+        height: 18rem;
+        gap: 5px;
+    }
+
+    .merotwitter-logo {
+        font-size: 25px;
+    }
+
+    .sigin-twitter {
+        font-size: 11px;
+    }
+
+    .apikey-input {
+        width: 12rem;
+        height: 1rem;
+    }
+
+    .login {
+        width: 3rem;
+        height: 1.4rem;
+        font-size: 12px;
+    }
+
+    .no-account {
+        font-size: 12px;
+    }
 }
