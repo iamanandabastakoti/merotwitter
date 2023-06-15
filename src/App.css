@@ -648,3 +648,20 @@ input:focus {
   font-size: 25px;
   font-weight: 500;
 }
+
+
+@media screen and (max-width: 767px) {
+  .sidebar,
+  .trends {
+    display: none;
+  }
+
+  .homeTitle {
+    font-size: 20px;
+  }
+
+  .userPic img {
+    width: 45px;
+    height: 45px;
+  }
+}
