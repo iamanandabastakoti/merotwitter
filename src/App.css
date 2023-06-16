@@ -662,7 +662,10 @@ input:focus {
   font-weight: 500;
 }
 
-
+/* Components visible in small and medium devices but not large devices */
+.explore-trends {
+  display: none;
+}
 
 /* Main App Media Query  */
 @media screen and (max-width: 515px) {
@@ -701,8 +704,34 @@ input:focus {
     display: flex;
     font-size: 25px;
   }
-  .pages-title{
+
+  .pages-title {
     display: flex;
     justify-content: center;
+  }
+
+  .explore-trends {
+    display: flex;
+  }
+
+  .trends-left {
+    padding: 15px;
+  }
+  .trending-card:hover{
+    background: none;
+  }
+  .search-bar {
+    width: 100%;
+    margin-top: 0;
+  }
+  input{
+    width: 85%;
+  }
+  .trend-list {
+    width: 100%;
+    background: none;
+  }
+  .trends-for-you {
+    padding: 5px;
   }
 }

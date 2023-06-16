@@ -1,5 +1,5 @@
 import React from 'react'
-import {BiSearch} from 'react-icons/bi'
+import { BiSearch } from 'react-icons/bi'
 import Trending from './Trending'
 
 const Trends = () => {
@@ -40,17 +40,17 @@ const Trends = () => {
             <h3>Trends for you</h3>
           </div>
           <div className="trending">
-            {trends.map(({trendTitle, trendingContent, totalTweets}) => {
-              return(
+            {trends.map(({ trendTitle, trendingContent, totalTweets }) => {
+              return (
                 <Trending trendTitle={trendTitle} trendingContent={trendingContent} totalTweets={totalTweets} />
               )
             })}
           </div>
           <div className="show-more">
             Show More
+          </div>
         </div>
-        </div>
-        
+
       </div>
       <div className="trends-right"></div>
     </div>
