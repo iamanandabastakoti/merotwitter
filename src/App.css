@@ -288,6 +288,9 @@ textarea:focus {
 }
 
 .tweetButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 25px;
   color: #fff;
   background-color: #8ecdf7;
@@ -668,6 +671,56 @@ input:focus {
 }
 
 /* Main App Media Query  */
+@media screen and (max-width: 425px) {
+
+  .userPic img,
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+  }
+
+  textarea {
+    height: 70px;
+  }
+
+  .tweetButton {
+    padding: 6px;
+    font-size: 14px;
+    width: 16%;
+  }
+
+  .tweet-text {
+    font-size: 14px;
+  }
+
+  .user-handle,
+  .user-name {
+    font-size: 10px;
+  }
+
+  .header-more {
+    font-size: 18px;
+  }
+
+  .footer-icons {
+    font-size: 15px;
+  }
+
+  .messages-content {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  .message-button {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .messages-description-content {
+    width: 95%;
+  }
+}
+
 @media screen and (max-width: 515px) {
   .app {
     display: flex;
@@ -717,20 +770,25 @@ input:focus {
   .trends-left {
     padding: 15px;
   }
-  .trending-card:hover{
+
+  .trending-card:hover {
     background: none;
   }
+
   .search-bar {
     width: 100%;
     margin-top: 0;
   }
-  input{
+
+  input {
     width: 85%;
   }
+
   .trend-list {
     width: 100%;
     background: none;
   }
+
   .trends-for-you {
     padding: 5px;
   }
