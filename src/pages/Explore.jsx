@@ -6,7 +6,7 @@ const Explore = () => {
 
   return (
     <div className="explore-section">
-      <div className="explore-title">
+      <div className="pages-title">
         <h3>Explore</h3>
       </div>
     </div>

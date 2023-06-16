@@ -6,7 +6,7 @@ const Bookmarks = () => {
 
   return (
     <div className="bookmarks-section">
-      <div className="bookmarks-title">
+      <div className="pages-title">
         <h3>Bookmarks</h3>
         <span className="bookmarks-username">
           @iamanandabastakoti

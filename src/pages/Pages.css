@@ -84,12 +84,7 @@
     height: fit-content;
 }
 
-.explore-title,
-.notification-title,
-.messages-title,
-.lists-title,
-.bookmarks-title,
-.twitter-blue-title {
+.pages-title {
     padding: 10px;
     border: 1px solid #ccc;
 }

@@ -6,7 +6,7 @@ const Lists = () => {
 
   return (
     <div className="lists-section">
-      <div className="lists-title">
+      <div className="pages-title">
         <h3>Lists</h3>
       </div>
     </div>

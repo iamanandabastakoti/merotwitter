@@ -20,7 +20,7 @@ const Notifications = () => {
 
   return (
     <div className="notification-section">
-      <div className="notification-title">
+      <div className="pages-title">
         <h3>Notifications</h3>
       </div>
       <div className="all-notifications">

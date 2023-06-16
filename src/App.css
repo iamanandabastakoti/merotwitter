@@ -4,12 +4,17 @@
   --text-font: 'Poppins', sans-serif;
 }
 
+.bottomNavBar {
+  display: none;
+}
+
 * {
   font-family: var(--text-font);
   height: 100%;
   margin: 0px;
 }
-a{
+
+a {
   text-decoration: none;
   color: black;
   display: flex;
@@ -17,9 +22,11 @@ a{
   align-items: center;
   height: fit-content;
 }
-a:hover{
+
+a:hover {
   height: fit-content;
 }
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -118,10 +125,12 @@ body::-webkit-scrollbar {
   align-items: center;
   gap: .5rem;
 }
-.optionList .icon{
+
+.optionList .icon {
   height: 100%;
   display: flex;
 }
+
 .optionList:hover {
   padding-left: 10px;
   padding-right: 25px;
@@ -179,6 +188,7 @@ body::-webkit-scrollbar {
 /* Sidebar User Profile */
 .sidebar-user-profile {
   display: flex;
+  align-items: center;
   width: fit-content;
   gap: 3px;
   padding-left: 4px;
@@ -387,17 +397,20 @@ textarea:focus {
   padding: 8px;
   border-radius: 50%;
 }
+
 .footer-comment:hover,
 .footer-interactions:hover,
-.footer-share:hover{
+.footer-share:hover {
   color: #1d9bf0;
   background-color: #c1e0f5;
 }
-.footer-retweet:hover{
+
+.footer-retweet:hover {
   color: #00ba7c;
   background-color: #bdeddd;
 }
-.footer-react:hover{
+
+.footer-react:hover {
   color: #f91880;
   background-color: #fdc1dd;
 }
@@ -647,4 +660,49 @@ input:focus {
   align-items: center;
   font-size: 25px;
   font-weight: 500;
+}
+
+
+
+/* Main App Media Query  */
+@media screen and (max-width: 515px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .trends {
+    display: none;
+  }
+
+  .homeTitle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bottomNavBar {
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: -20px 2px 20px 0px black;
+  }
+
+  .bottom-options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .bottom-optionList {
+    display: flex;
+    font-size: 25px;
+  }
+  .pages-title{
+    display: flex;
+    justify-content: center;
+  }
 }

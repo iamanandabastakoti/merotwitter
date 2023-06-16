@@ -12,6 +12,7 @@ import Bookmarks from './pages/Bookmarks'
 import TwitterBlue from './pages/TwitterBlue'
 import UserProfile from './pages/UserProfile'
 import LogIn from './pages/LogIn'
+import BottomNavBar from './BottomNavBar'
 
 const App = () => {
 
@@ -33,6 +34,7 @@ const App = () => {
             <Route path='/profile/:userkey' element={<UserProfile />} />
           </Routes>
         </div>
+        <BottomNavBar />
         <Trends />
       </div>
     </>
