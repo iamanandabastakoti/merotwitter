@@ -32,19 +32,22 @@ const LogIn = ({ setLoggedIn, setUserApi }) => {
     for (var i = 0; i < apiKeys.length - 1; i++) {
         if (password == apiKeys[i]) {
             count++;
-        } else if (password === '') {
-            count--;
         }
     }
 
     const checkAPIKey = () => {
-        if (count > 0) {
+        if ( password === `${import.meta.env.VITE_ADMIN_PASS}`) {
             setLoggedIn((v) => !v)
-            setUserApi((v) => password)
-        } else if (count < 0) {
-            alert('Please Enter the API Key')
+            setUserApi((v) => `${import.meta.env.VITE_API_KEY}`)
         } else {
-            alert('Wrong API Key');
+            if (count > 0) {
+                setLoggedIn((v) => !v)
+                setUserApi((v) => password)
+            } else if (count < 0) {
+                alert('Please Enter the API Key')
+            } else {
+                alert('Wrong API Key');
+            }
         }
     }
 

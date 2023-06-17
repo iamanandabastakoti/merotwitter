@@ -29,7 +29,7 @@ const App = ({ userApi }) => {
             <Route path='/messages' element={<Messages />} />
             <Route path='/lists' element={<Lists />} />
             <Route path='/bookmarks' element={<Bookmarks />} />
-            <Route path='/twitterblue' element={<TwitterBlue />} />
+            <Route path='/twitter-blue' element={<TwitterBlue />} />
             <Route path='/tweet/:id' element={<SingleTweet />} />
             <Route path='/profile/:userkey' element={<UserProfile />} />
           </Routes>
