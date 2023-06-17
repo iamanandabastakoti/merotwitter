@@ -54,7 +54,7 @@ const UserProfile = () => {
         </div>
         {isloaded ? <div className="user-profile-info">
           <div className="user-profile-picture">
-            <img src={profilePicture[0]} alt="Profile Picture" />
+            <a href={profilePicture[0]} target='_blank' > <img src={profilePicture[0]} alt="Profile Picture" /> </a>
           </div>
           <div className="user-name-info">
             <h3>{fullName[0]}</h3>
