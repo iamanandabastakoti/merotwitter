@@ -588,6 +588,9 @@ input:focus {
 }
 
 .commentButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 25px;
   color: #fff;
   background-color: #8ecdf7;
@@ -719,6 +722,11 @@ input:focus {
   .messages-description-content {
     width: 95%;
   }
+
+  .commentButton {
+    padding: 8px;
+    font-size: 10px;
+}
 }
 
 @media screen and (max-width: 515px) {
