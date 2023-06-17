@@ -5,10 +5,11 @@ import App from './App.jsx'
 const Shell = () => {
 
   const [loggedIn, setLoggedIn] = useState(false);
+  const [userApi, setUserApi] = useState('');
 
   return (
     <div className="shell">
-      {loggedIn ? <App /> : <LogIn setLoggedIn={setLoggedIn} />}
+      {loggedIn ? <App userApi={userApi} /> : <LogIn setLoggedIn={setLoggedIn} setUserApi={setUserApi} />}
 
     </div>
   )

@@ -14,15 +14,15 @@ import UserProfile from './pages/UserProfile'
 import LogIn from './pages/LogIn'
 import BottomNavBar from './BottomNavBar'
 
-const App = () => {
+const App = ({ userApi }) => {
 
   return (
     <>
       <div className="app">
-        <Sidebar />
+        <Sidebar userApi={userApi} />
         <div className="mainContents">
           <Routes>
-            <Route index element={<Home />} />
+            <Route index element={<Home userApi={userApi} />} />
             <Route path='/home' element={<Home />} />
             <Route path='/explore' element={<Explore />} />
             <Route path='/notifications' element={<Notifications />} />

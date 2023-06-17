@@ -11,7 +11,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import { Triangle } from 'react-loader-spinner'
 
-const Sidebar = () => {
+const Sidebar = ({ userApi }) => {
     const [fullName, setFullName] = useState([]);
     const [username, setUsername] = useState([]);
     const [profilePicture, setProfilePicture] = useState([]);
@@ -21,9 +21,9 @@ const Sidebar = () => {
 
     const [users, setUsers] = useState([]);
     const fetchUser = async () => {
-        const profile = await axios.get(`https://react-workshop-todo.fly.dev/posts/profile/${import.meta.env.VITE_API_KEY}`, {
+        const profile = await axios.get(`https://react-workshop-todo.fly.dev/posts/profile/${userApi}`, {
             headers: {
-                apiKey: `${import.meta.env.VITE_API_KEY}`
+                apiKey: `${userApi}`
             }
         });
         setUsers(profile.data);
