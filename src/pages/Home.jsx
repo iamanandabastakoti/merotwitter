@@ -5,7 +5,7 @@ import Tweet from '../components/home/Tweet'
 import axios from 'axios'
 import { Triangle } from 'react-loader-spinner'
 
-const Home = () => {
+const Home = ({ userApi }) => {
 
   {document.title='Mero Twitter - Home'}
 
@@ -13,20 +13,31 @@ const Home = () => {
   const [userKey, setUserKey] = useState([]);
   const [profilePicture, setProfilePicture] = useState([]);
 
+  const [allTweet, setAllTweet] = useState([]);
   const [users, setUsers] = useState([]);
   const [shouldRefresh, setShouldRefresh] = useState(false);
   const fetchTweets = async () => {
     const posts = await axios.get("https://react-workshop-todo.fly.dev/posts/all?limit=100", {
       headers: {
-        apiKey: `${import.meta.env.VITE_API_KEY}`
+        apiKey: `${userApi}`
       }
     });
-    setUsers(posts.data);
+    setAllTweet(posts.data);
     setIsLoading(false);
   };
 
+  const fetchUser = async () => {
+    const profile = await axios.get(`https://react-workshop-todo.fly.dev/posts/profile/${userApi}`, {
+        headers: {
+            apiKey: `${userApi}`
+        }
+    });
+    setUsers(profile.data);
+}
+
   useEffect(() => {
     fetchTweets();
+    fetchUser();
   }, [shouldRefresh]);
 
   users.map(({user}) => {
@@ -52,7 +63,7 @@ const Home = () => {
       </div>
       : null
       }
-      {users.map(({ user, content, image, _id }) => {
+      {allTweet.map(({ user, content, image, _id }) => {
         return <Tweet avatar={'https://avatars.githubusercontent.com/u/' + user.githubId + '?v=4'} name={user.fullname} username={'@' + user.name} tweet={content} image={image} userkey={user._id} id={_id} />
       })}
     </div>
