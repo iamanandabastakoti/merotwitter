@@ -669,12 +669,16 @@ input:focus {
 }
 
 /* Components visible in small and medium devices but not large devices */
-.explore-trends {
+.explore-trends,
+.add-tweet-icon {
   display: none;
 }
 
 /* Main App Media Query  */
 @media screen and (max-width: 425px) {
+  .mainContents::-webkit-scrollbar {
+    display: none;
+  }
 
   .userPic img,
   .profile-pic {
@@ -726,10 +730,14 @@ input:focus {
   .commentButton {
     padding: 8px;
     font-size: 10px;
-}
+  }
 }
 
 @media screen and (max-width: 515px) {
+  .mainContents::-webkit-scrollbar {
+    display: none;
+  }
+
   .app {
     display: flex;
     flex-direction: column;
@@ -763,7 +771,19 @@ input:focus {
 
   .bottom-optionList {
     display: flex;
-    font-size: 25px;
+  }
+
+  .bottom-home {
+    font-size: 24px;
+  }
+
+  .bottom-search {
+    font-size: 26px;
+  }
+
+  .bottom-notification,
+  .bottom-message {
+    font-size: 21px;
   }
 
   .pages-title {
@@ -799,5 +819,62 @@ input:focus {
 
   .trends-for-you {
     padding: 5px;
+  }
+}
+
+@media screen and (max-width: 1006px) {
+  .mainContents::-webkit-scrollbar {
+    display: none;
+  }
+
+  .optionName,
+  .trends,
+  .sidebar-usser-info,
+  .tweet-button,
+  .sidebarLeft {
+    display: none;
+  }
+
+  .add-tweet-icon {
+    display: flex;
+    color: #1d9bf0;
+  }
+
+  .sidebar {
+    flex: none;
+    width: 10%;
+  }
+
+  .sidebarRight {
+    flex: none;
+    width: 100%;
+  }
+
+  .options {
+    align-items: center;
+  }
+
+  .optionList,
+  .optionList:hover,
+  .optionList-button,
+  .sidebar-user-profile,
+  .appIcon {
+    padding-left: 0px;
+    padding-right: 0px;
+    background: none;
+  }
+
+  .optionList {
+    padding: 15px;
+  }
+
+  .optionList-button {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .sidebar-profile-pic {
+    width: 40px;
+    height: 40px;
   }
 }

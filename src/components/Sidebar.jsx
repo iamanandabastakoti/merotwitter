@@ -5,6 +5,7 @@ import { GrNotification } from 'react-icons/gr'
 import { FiMail } from 'react-icons/fi'
 import { RiTodoLine } from 'react-icons/ri'
 import { TiSocialTwitterCircular } from 'react-icons/ti'
+import { IoMdAddCircle } from "react-icons/io";
 import { CiCircleMore } from 'react-icons/ci'
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
@@ -108,6 +109,7 @@ const Sidebar = () => {
                         </div>
                     </Link>
                     <div className="optionList-button">
+                        <div className="add-tweet-icon"><IoMdAddCircle /></div>
                         <button className="tweet-button">Tweet</button>
                     </div>
                     <div className="optionList">
