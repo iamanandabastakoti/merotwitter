@@ -3,7 +3,7 @@ import React from 'react'
 const Messages = () => {
 
   {document.title='Mero Twitter - Messages'}
-  const noMessage = () => {
+  const noFeature = () => {
     alert('This feature is not available yet!');
   }
 
@@ -20,7 +20,7 @@ const Messages = () => {
           Drop a line, share Tweets and more with private conversations between you and others on Twitter.
         </div>
         <div className="arite-message-button">
-          <button onClick={noMessage} className='message-button'>Write a message</button>
+          <button onClick={noFeature} className='message-button'>Write a message</button>
         </div>
       </div>
     </div>

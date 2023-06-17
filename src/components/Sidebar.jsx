@@ -12,6 +12,11 @@ import axios from 'axios';
 import { Triangle } from 'react-loader-spinner'
 
 const Sidebar = ({ userApi }) => {
+
+    const noFeature = () => {
+        alert('This feature is not available yet!');
+      }
+
     const [fullName, setFullName] = useState([]);
     const [username, setUsername] = useState([]);
     const [profilePicture, setProfilePicture] = useState([]);
@@ -103,12 +108,12 @@ const Sidebar = ({ userApi }) => {
                         </div>
                     </Link>
                     <Link>
-                        <div className="optionList">
+                        <div onClick={noFeature} className="optionList">
                             <div className="icon"><CiCircleMore /></div>
                             <div className="optionName">More</div>
                         </div>
                     </Link>
-                    <div className="optionList-button">
+                    <div onClick={noFeature} className="optionList-button">
                         <div className="add-tweet-icon"><IoMdAddCircle /></div>
                         <button className="tweet-button">Tweet</button>
                     </div>
