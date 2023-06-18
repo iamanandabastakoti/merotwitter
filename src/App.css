@@ -125,7 +125,13 @@ body::-webkit-scrollbar {
   align-items: center;
   gap: .5rem;
 }
-
+.active {
+  color: #1d9bf0;
+}
+.active-pic{
+  border: 1px solid #1d9bf0;
+  border-radius: 50%;
+}
 .optionList .icon {
   height: 100%;
   display: flex;

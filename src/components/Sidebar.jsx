@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { BsTwitter } from 'react-icons/bs'
 import { BiHomeCircle, BiHash, BiBookmark, BiUser } from 'react-icons/bi'
-import { GrNotification } from 'react-icons/gr'
+import { MdNotificationsNone } from 'react-icons/md'
 import { FiMail } from 'react-icons/fi'
 import { RiTodoLine } from 'react-icons/ri'
 import { TiSocialTwitterCircular } from 'react-icons/ti'
@@ -51,6 +51,11 @@ const Sidebar = ({ userApi }) => {
         navigate(`/profile/${userId[0]}`)
     }
 
+    const [option, setOption] = useState(1);
+    const toggleOption = (index) => {
+        setOption(index);
+    }
+
     return (
         <div className="sidebar">
             <div className="sidebarLeft"></div>
@@ -60,49 +65,49 @@ const Sidebar = ({ userApi }) => {
                         <BsTwitter />
                     </div>
                     <Link to='/home'>
-                        <div className="optionList">
+                        <div className={option === 1 ? 'optionList active' : 'optionList'} onClick={() => toggleOption(1)} >
                             <div className="icon"><BiHomeCircle /></div>
                             <div className="optionName">Home</div>
                         </div>
                     </Link>
                     <Link to='/explore'>
-                        <div className="optionList">
+                        <div className={option === 2 ? 'optionList active' : 'optionList'} onClick={() => toggleOption(2)} >
                             <div className="icon"><BiHash /></div>
                             <div className="optionName">Explore</div>
                         </div>
                     </Link>
                     <Link to='/notifications'>
-                        <div className="optionList">
-                            <div className="icon"><GrNotification /></div>
+                        <div className={option === 3 ? 'optionList active' : 'optionList'} onClick={() => toggleOption(3)} >
+                            <div className="icon"><MdNotificationsNone /></div>
                             <div className="optionName">Notifications</div>
                         </div>
                     </Link>
                     <Link to='/messages'>
-                        <div className="optionList">
+                        <div className={option === 4 ? 'optionList active' : 'optionList'} onClick={() => toggleOption(4)} >
                             <div className="icon"><FiMail /></div>
                             <div className="optionName">Messages</div>
                         </div>
                     </Link>
                     <Link to='/lists'>
-                        <div className="optionList">
+                        <div className={option === 5 ? 'optionList active' : 'optionList'} onClick={() => toggleOption(5)} >
                             <div className="icon"><RiTodoLine /></div>
                             <div className="optionName">Lists</div>
                         </div>
                     </Link>
                     <Link to='/bookmarks'>
-                        <div className="optionList">
+                        <div className={option === 6 ? 'optionList active' : 'optionList'} onClick={() => toggleOption(6)} >
                             <div className="icon"><BiBookmark /></div>
                             <div className="optionName">Bookmarks</div>
                         </div>
                     </Link>
                     <Link to='/twitter-blue'>
-                        <div className="optionList">
+                        <div className={option === 7 ? 'optionList active' : 'optionList'} onClick={() => toggleOption(7)} >
                             <div className="icon"><TiSocialTwitterCircular /></div>
                             <div className="optionName">Twitter Blue</div>
                         </div>
                     </Link>
                     <Link to={`/profile/${userId[0]}`} >
-                        <div className="optionList">
+                        <div className={option === 8 ? 'optionList active' : 'optionList'} onClick={() => toggleOption(8)}>
                             <div className="icon"><BiUser /></div>
                             <div className="optionName">Profile</div>
                         </div>
@@ -132,7 +137,7 @@ const Sidebar = ({ userApi }) => {
                                 :
                                 <div onClick={navigateToProfile} className="sidebar-user-profile">
                                     <img
-                                        className="sidebar-profile-pic"
+                                    className={option === 9 ? 'sidebar-profile-pic active-pic' : 'sidebar-profile-pic'} onClick={() => toggleOption(9)}
                                         src={profilePicture[0]}
                                         alt="Profile Picture"
                                     />
