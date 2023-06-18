@@ -48,7 +48,7 @@ const Home = ({ userApi }) => {
   return (
     <div className="home">
       <HomeTitle />
-      <UserTweet userKey={userKey[0]} profilePicture={profilePicture[0]} setShouldRefresh={setShouldRefresh} />
+      
       {isLoading ? 
       <div className="loading-triangle">
         <Triangle
@@ -61,8 +61,9 @@ const Home = ({ userApi }) => {
           visible={true}
           /> 
       </div>
-      : null
-      }
+      :
+      <UserTweet userKey={userKey[0]} profilePicture={profilePicture[0]} setShouldRefresh={setShouldRefresh} />
+    }
       {allTweet.map(({ user, content, image, _id }) => {
         return <Tweet avatar={'https://avatars.githubusercontent.com/u/' + user.githubId + '?v=4'} name={user.fullname} username={'@' + user.name} tweet={content} image={image} userkey={user._id} id={_id} />
       })}

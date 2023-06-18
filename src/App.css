@@ -845,6 +845,7 @@ input:focus {
   }
 
   .add-tweet-icon {
+    cursor: pointer;
     display: flex;
     color: #1d9bf0;
   }
