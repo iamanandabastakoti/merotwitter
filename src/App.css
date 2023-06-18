@@ -679,6 +679,9 @@ input:focus {
 .add-tweet-icon {
   display: none;
 }
+.active-bottom-option{
+  color: #1d9bf0;
+}
 
 /* Main App Media Query  */
 @media screen and (max-width: 425px) {
@@ -764,7 +767,7 @@ input:focus {
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    border: 2px solid black;
+    border-top: 2px solid black;
     box-shadow: -20px 2px 20px 0px black;
   }
 
