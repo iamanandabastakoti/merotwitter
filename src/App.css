@@ -125,13 +125,16 @@ body::-webkit-scrollbar {
   align-items: center;
   gap: .5rem;
 }
+
 .active {
   color: #1d9bf0;
 }
-.active-pic{
+
+.active-pic {
   border: 1px solid #1d9bf0;
   border-radius: 50%;
 }
+
 .optionList .icon {
   height: 100%;
   display: flex;
@@ -672,7 +675,8 @@ input:focus {
 .add-tweet-icon {
   display: none;
 }
-.active-bottom-option{
+
+.active-bottom-option {
   color: #1d9bf0;
 }
 
@@ -783,6 +787,16 @@ input:focus {
     font-size: 26px;
   }
 
+  .bottom-profile img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  .active-bottom-profile img{
+    border: 2px solid #1d9bf0;
+  }
+
   .bottom-notification,
   .bottom-message {
     font-size: 21px;
@@ -884,13 +898,16 @@ input:focus {
   .explore-trends {
     display: flex;
   }
-  .trends-left{
+
+  .trends-left {
     padding: 0 25px;
   }
+
   .trend-list {
     width: 100%;
     background: none;
   }
+
   .trending-card:hover {
     background: none;
   }
