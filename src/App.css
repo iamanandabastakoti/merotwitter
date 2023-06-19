@@ -138,8 +138,7 @@ body::-webkit-scrollbar {
 }
 
 .optionList:hover {
-  padding-left: 10px;
-  padding-right: 25px;
+
   width: fit-content;
   border-radius: 29px;
   background-color: #f3f1f1;
@@ -175,12 +174,6 @@ body::-webkit-scrollbar {
 
 .appIcon {
   font-size: 30px;
-  border-radius: 50%;
-  padding: 4px 10px;
-}
-
-.appIcon:hover {
-  width: fit-content;
   border-radius: 50%;
   padding: 4px 10px;
 }
