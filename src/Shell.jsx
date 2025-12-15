@@ -9,7 +9,7 @@ const Shell = () => {
 
   return (
     <div className="shell">
-      {loggedIn ? <App userApi={userApi} /> : <LogIn setLoggedIn={setLoggedIn} setUserApi={setUserApi} />}
+      {!loggedIn ? <App userApi={userApi} /> : <LogIn setLoggedIn={setLoggedIn} setUserApi={setUserApi} />}
 
     </div>
   )

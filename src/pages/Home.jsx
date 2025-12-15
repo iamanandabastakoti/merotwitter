@@ -49,7 +49,7 @@ const Home = ({ userApi }) => {
     <div className="home">
       <HomeTitle />
       
-      {isLoading ? 
+      {!isLoading ? 
       <div className="loading-triangle">
         <Triangle
           height="80"
